@@ -29,10 +29,7 @@
             <article class="card">
               <div class="card-body row">
                 <div class="col-12 mb-4">
-                  {{ with .Params.Image}}
-                  <img src="{{ . | absURL }}" class="img-fluid w-100" alt="{{ $.Title }}"
-                    style="height: 350px; object-fit: cover;">
-                  {{ end }}
+                  <img src="{{ .Permalink }}{{ .Params.Image }}" class="img-fluid w-100" alt="{{ $.Title }}" style="height: 350px; object-fit: cover;">
                 </div>
                 <div class="col-md-8 mx-auto text-center">
                   <small class="post-category">{{ delimit .Params.categories ", " }}</small>
