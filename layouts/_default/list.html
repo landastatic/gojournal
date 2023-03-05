@@ -48,7 +48,7 @@
           <div class="col-sm-6 mb-4">
             <article class="card">
               <div class="card-body">
-                <img src="{{ .Params.Image | absURL }}" class="img-fluid w-100 mb-3" alt="{{ .Title }}"
+                <img src="{{ .Permalink }}{{ .Params.Image }}" class="img-fluid w-100 mb-3" alt="{{ .Title }}"
                   style="height: 350px; object-fit: cover;">
                 <small class="post-category mb-2">{{ delimit .Params.categories ", " }}</small>
                 <h3 class="mb-2"><a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>

@@ -15,7 +15,7 @@
     <div class="row">
       {{ if .Params.Image }}
       <div class="col-12 mb-4">
-        <img src="{{ .Params.Image | absURL }}" alt="{{ $.Title }}" class="img-fluid w-100">
+        <img src="{{ .Permalink }}{{ .Params.Image }}" alt="{{ $.Title }}" class="img-fluid w-100">
       </div>
       {{ end }}
       <!-- left sidebar -->

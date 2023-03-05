@@ -14,7 +14,7 @@
     <li class="media mb-3">
       <a href="{{ .Permalink }}">
         {{ if .Params.Image }}
-        <img class="mr-2" src="{{ .Params.Image | absURL }}" height="65px" width="80px" style="object-fit: cover;">
+        <img class="mr-2" src="{{ .Permalink }}{{ .Params.Image }}" height="65px" width="80px" style="object-fit: cover;">
         {{ else }}
         <p class="recent-thumb-alt mr-2">{{.Title | title}}</p>
         {{ end }}
